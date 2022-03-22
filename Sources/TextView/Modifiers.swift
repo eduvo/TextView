@@ -117,6 +117,7 @@ public extension TextView {
     func isSelectable(_ isSelectable: Bool) -> TextView {
         var view = self
         view.isSelectable = isSelectable
+        view.isUserInteractionEnabled = isSelectable
         return view
     }
 
